@@ -1,0 +1,68 @@
+nav{
+    background-color: white;
+    padding: 30px 170px;
+    ul{
+       position: relative;
+        li{
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: 10px;
+         &:hover{
+            ul{
+                display: block;
+            }
+         }
+        a{
+            color: black;
+            letter-spacing: 1px;
+        }
+
+        }
+
+    
+        ul{
+            width: 32%;
+            padding: 15px;
+            
+            display: none ;
+           position: absolute;
+           background-color: rgb(42, 42, 42);
+           animation: fadeInSubItem 0.3s ease-in-out;
+           
+             li{
+                 list-style-type: none;
+                 padding: 1px;
+             a{
+                text-align: center;
+                color: white;
+                text-decoration: none;
+                &:hover{
+                    color: rgb(132, 132, 132);
+                    transition: color 0.2s ease-in-out ;
+                }
+             }
+     
+             }
+     
+         }
+     }
+    
+    @keyframes fadeInSubItem {
+        from{
+            opacity: 0;
+            margin-top:10px ;
+        }
+        to{
+            opacity: 1;
+            margin-bottom: 0px;
+        }
+        
+    }
+    
+    }
+    img{
+        
+            position: absolute;
+            
+        
+    }
